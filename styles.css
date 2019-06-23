@@ -1,13 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html, body {
-  background: url("https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background: url("https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 100%;
   width: 100%;
   font-family: 'Coustard', serif;
@@ -85,6 +87,11 @@ header {
   cursor: pointer;
 }
 
+.submit:hover {
+  cursor: pointer;
+  outline: none;
+}
+
 /* LAYOUT BASICS */
 
 a {
@@ -157,5 +164,14 @@ h1, p {
   .navbar-nav a {
     font-size: 1.25rem;
     padding: 1rem;
+  }
+  
+  .fa-sign-in-alt, .fa-user-plus {
+    padding: .5rem;
+    font-size: 1.25rem;
+  }
+
+  .fa-pagelines {
+    font-size: 2rem;
   }
 }
